@@ -1,10 +1,10 @@
 # FocusOrb
-FocusOrb 🍎  A minimalist floating Pomodoro timer for Chrome.
 
+FocusOrb 🍎 A minimalist floating Pomodoro timer for Chrome.
 
 # FocusOrb 🍎
 
-*A minimalist floating Pomodoro timer for Chrome.*
+_A minimalist floating Pomodoro timer for Chrome._
 
 FocusOrb is a lightweight Chrome extension that adds a beautiful, draggable floating timer to any webpage.
 
@@ -14,14 +14,14 @@ Designed with an Apple-inspired UI language — clean, calm, and distraction-fre
 
 ## ✨ Features
 
-* 🟢 Always-visible floating bubble
-* 🎯 Minimal 25-minute Pomodoro timer
-* 🖱 Draggable and position persists
-* 🧊 Soft glassmorphism (frosted blur effect)
-* 🎨 Apple-like design system
-* 🌙 Neutral grayscale palette with subtle blue accent
-* 🔔 Gentle notification when session ends
-* ⚡ Lightweight and fast (Manifest V3)
+- 🟢 Always-visible floating bubble
+- 🎯 Minimal 25-minute Pomodoro timer
+- 🖱 Draggable and position persists
+- 🧊 Soft glassmorphism (frosted blur effect)
+- 🎨 Apple-like design system
+- 🌙 Neutral grayscale palette with subtle blue accent
+- 🔔 Gentle notification when session ends
+- ⚡ Lightweight and fast (Manifest V3)
 
 ---
 
@@ -29,12 +29,12 @@ Designed with an Apple-inspired UI language — clean, calm, and distraction-fre
 
 FocusOrb follows modern Apple Human Interface principles:
 
-* Minimal UI
-* Soft shadows and smooth animations
-* Clean typography
-* Subtle depth and blur
-* No clutter
-* No distractions
+- Minimal UI
+- Soft shadows and smooth animations
+- Clean typography
+- Subtle depth and blur
+- No clutter
+- No distractions
 
 It feels like a native macOS floating element — not a typical browser extension.
 
@@ -43,11 +43,15 @@ It feels like a native macOS floating element — not a typical browser extensio
 ## 📂 Project Structure
 
 ```
-focusorb/
-│
-├── manifest.json
-├── content.js
-└── styles.css
+FocusOrb/
+├── manifest.json       — MV3 extension manifest
+├── content.js          — Injected timer UI + logic
+├── styles.css          — Apple glassmorphism styles
+├── background.js       — Service worker (Chrome notifications)
+└── icons/
+    ├── icon16.png
+    ├── icon48.png
+    └── icon128.png
 ```
 
 ---
@@ -70,7 +74,7 @@ chrome://extensions/
 
 4. Click **Load unpacked**
 
-5. Select the `focusorb` folder
+5. Select the `FocusOrb` folder
 
 Done. FocusOrb will now float on every webpage.
 
@@ -78,11 +82,11 @@ Done. FocusOrb will now float on every webpage.
 
 ## 🛠 Built With
 
-* Vanilla JavaScript
-* CSS (Glassmorphism)
-* Chrome Extension Manifest V3
-* Chrome Storage API
-* Chrome Notifications API
+- Vanilla JavaScript
+- CSS (Glassmorphism)
+- Chrome Extension Manifest V3
+- Chrome Storage API
+- Chrome Notifications API
 
 No frameworks. No external libraries.
 
@@ -90,12 +94,12 @@ No frameworks. No external libraries.
 
 ## 🧠 Roadmap
 
-* [ ] Custom timer durations
-* [ ] Focus streak tracking
-* [ ] Ambient focus sounds
-* [ ] Smart website detection
-* [ ] Dark mode refinements
-* [ ] Sync across devices
+- [ ] Custom timer durations
+- [ ] Focus streak tracking
+- [ ] Ambient focus sounds
+- [ ] Smart website detection
+- [ ] Dark mode refinements
+- [ ] Sync across devices
 
 ---
 

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusOrb</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="orb-app">
+      <!-- Top bar: drag handle + close -->
+      <div id="orb-topbar">
+        <span id="orb-title">Focus</span>
+        <button id="btn-close" title="Close">&#x2715;</button>
+      </div>
+
+      <!-- Flip clock -->
+      <div id="flip-clock">
+        <!-- Minutes -->
+        <div class="flip-unit" id="unit-m0">
+          <div class="flip-card">
+            <div class="flip-card__top"><span>2</span></div>
+            <div class="flip-card__bottom"><span>2</span></div>
+            <div class="flip-card__back">
+              <div class="flip-card__back-top"><span>2</span></div>
+              <div class="flip-card__back-bottom"><span>2</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-unit" id="unit-m1">
+          <div class="flip-card">
+            <div class="flip-card__top"><span>5</span></div>
+            <div class="flip-card__bottom"><span>5</span></div>
+            <div class="flip-card__back">
+              <div class="flip-card__back-top"><span>5</span></div>
+              <div class="flip-card__back-bottom"><span>5</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colon -->
+        <div id="flip-colon">
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Seconds -->
+        <div class="flip-unit" id="unit-s0">
+          <div class="flip-card">
+            <div class="flip-card__top"><span>0</span></div>
+            <div class="flip-card__bottom"><span>0</span></div>
+            <div class="flip-card__back">
+              <div class="flip-card__back-top"><span>0</span></div>
+              <div class="flip-card__back-bottom"><span>0</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flip-unit" id="unit-s1">
+          <div class="flip-card">
+            <div class="flip-card__top"><span>0</span></div>
+            <div class="flip-card__bottom"><span>0</span></div>
+            <div class="flip-card__back">
+              <div class="flip-card__back-top"><span>0</span></div>
+              <div class="flip-card__back-bottom"><span>0</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /flip-clock -->
+
+      <!-- Controls -->
+      <div id="orb-controls">
+        <button class="ctrl-btn" id="btn-reset" title="Reset">&#x21BA;</button>
+        <button class="ctrl-btn ctrl-btn--primary" id="btn-start">
+          &#x25B6;
+        </button>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
